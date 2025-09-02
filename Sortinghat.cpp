@@ -3,143 +3,141 @@
 // Keeps track of a user's answers to a series of questions, then determines which House they belong in at Hogwarts.
 int main() {
 
- // The magic starts here! :)
+    // The magic starts here! :)
 
- int gryffindor = 0, hufflepuff = 0, ravenclaw = 0, slytherin = 0;
+    int gryffindor = 0, hufflepuff = 0, ravenclaw = 0, slytherin = 0;
 
- int answer1, answer2, answer3, answer4;
+    int answer1, answer2, answer3, answer4;
 
- std::cout << "The Sorting Hat Quiz!\n\n";
+    std::cout << "The Sorting Hat Quiz!\n\n";
 
- std::cout << "Q1) When I'm dead, I want people to remember me as: \n\n";
- std::cout << "1) The Good\n";
- std::cout << "2) The Great\n";
- std::cout << "3) The Wise\n";
- std::cout << "4) The Bold\n";
+    std::cout << "Q1) When I'm dead, I want people to remember me as: \n\n";
+    std::cout << "1) The Good\n";
+    std::cout << "2) The Great\n";
+    std::cout << "3) The Wise\n";
+    std::cout << "4) The Bold\n";
 
- std::cin >> answer1;
+    std::cin >> answer1;
 
- if (answer1 == 1) {
+    if (answer1 == 1) {
 
-  hufflepuff++;
+        hufflepuff++;
 
- } else if (answer1 == 2) {
+    } else if (answer1 == 2) {
 
-  slytherin++;
+        slytherin++;
 
- } else if (answer1 == 3) {
+    } else if (answer1 == 3) {
 
-  ravenclaw++;
+        ravenclaw++;
 
- } else if (answer1 == 4) {
+    } else if (answer1 == 4) {
 
-  gryffindor++;
+        gryffindor++;
 
- }
+    }
 
- std::cout << "Q2) Dawn or dusk?\n\n";
- std::cout << "1) Dawn\n";
- std::cout << "2) Dusk\n";
+    std::cout << "Q2) Dawn or dusk?\n\n";
+    std::cout << "1) Dawn\n";
+    std::cout << "2) Dusk\n";
 
- std::cin >> answer2;
+    std::cin >> answer2;
 
- if (answer2 == 1) {
+    if (answer2 == 1) {
 
- gryffindor++;
- ravenclaw++;
+    gryffindor++;
+    ravenclaw++;
 
- } else if (answer2 == 2) {
+    } else if (answer2 == 2) {
 
-  hufflepuff++;
-  slytherin++;
+        hufflepuff++;
+        slytherin++;
 
- }
+    }
 
- std::cout << "Q3) Which kind of instrument most pleases your ear?\n\n";
- std::cout << "1) Violin\n";
- std::cout << "2) Trumpet\n";
- std::cout << "3) Piano\n";
- std::cout << "4) Drum\n";
+    std::cout << "Q3) Which kind of instrument most pleases your ear?\n\n";
+    std::cout << "1) Violin\n";
+    std::cout << "2) Trumpet\n";
+    std::cout << "3) Piano\n";
+    std::cout << "4) Drum\n";
 
- std::cin >> answer3;
+    std::cin >> answer3;
 
- if (answer3 == 1) {
+    if (answer3 == 1) {
 
-  slytherin++;
+        slytherin++;
 
- } else if (answer3 == 2) {
+    } else if (answer3 == 2) {
 
-  hufflepuff++;
+        hufflepuff++;
 
- } else if (answer3 == 3) {
+    } else if (answer3 == 3) {
 
-  ravenclaw++;
+        ravenclaw++;
 
- } else if (answer3 == 4) {
+    } else if (answer3 == 4) {
 
-  gryffindor++;
+        gryffindor++;
 
- }
+    }
 
- std::cout << "Q4) Which road tempts you most?\n\n";
- std::cout << "1) The wide, sunny grassy lane\n";
- std::cout << "2) The narrow, dark, lantern-lit alley\n";
- std::cout << "3) The twisting, leaf-strewn path through woods\n";
- std::cout << "4) The cobbled street lined (ancient buildings)\n";
+    std::cout << "Q4) Which road tempts you most?\n\n";
+    std::cout << "1) The wide, sunny grassy lane\n";
+    std::cout << "2) The narrow, dark, lantern-lit alley\n";
+    std::cout << "3) The twisting, leaf-strewn path through woods\n";
+    std::cout << "4) The cobbled street lined (ancient buildings)\n";
 
- std::cin >> answer4;
+    std::cin >> answer4;
 
- if (answer4 == 1) {
+    if (answer4 == 1) {
 
-  hufflepuff++;
+        hufflepuff++;
 
+    } else if (answer4 == 2) {
 
- } else if (answer4 == 2) {
+        slytherin++;
 
-  slytherin++;
+    } else if (answer4 == 3) {
 
- } else if (answer4 == 3) {
+        gryffindor++;
 
-  gryffindor++;
+    } else if (answer4 == 4) {
 
- } else if (answer4 == 4) {
+        ravenclaw++;
 
-  ravenclaw++;
+    }
 
- }
+    int max = 0;
+    std::string house;
 
- int max = 0;
- std::string house;
+    if (gryffindor > max) {
 
- if (gryffindor > max) {
+        max = gryffindor;
+        house = "Gryffindor";
 
-  max = gryffindor;
-  house = "Gryffindor";
+    }
 
- }
+    if (hufflepuff > max) {
 
+        max = hufflepuff;
+        house = "Hufflepuff";
 
- if (hufflepuff > max) {
+    }
 
-  max = hufflepuff;
-  house = "Hufflepuff";
+    if (ravenclaw > max) {
 
- }
+        max = ravenclaw;
+        house = "Ravenclaw";
 
- if (ravenclaw > max) {
+    }
 
-  max = ravenclaw;
-  house = "Ravenclaw";
+    if (slytherin > max) {
 
- }
+        max = slytherin;
+        house = "Slytherin";
 
- if (slytherin > max) {
+    }
 
-  max = slytherin;
-  house = "Slytherin";
-
- }
-
- std::cout << house << "!\n";
+    std::cout << house << "!\n";
 
 }
