@@ -2,8 +2,6 @@
 
 All completed projects from Codecademy's Learn C++ course.
 
-*This repository is currently a work-in-progress. As of Early September 2025, I still have a few more projects to upload, mainly the larger, multi-file ones later in the course. Those will be uploaded soon!*
-
 ## Overview
 
 This is a collection of all of the projects I completed in Codecademy's Learn C++ course. I originally took and completed this course in 2023, but I did not realize the importance of having an online programming portfolio at the time. Now that I'm pursuing a Bachelor's Degree in Computer Science, I recognize how crucial a portfolio is and am now uploading these projects, which I had thankfully saved in a Google Doc for later access before cancelling my Codecademy Pro subscription. (It was unclear to me if I would still have access to my completed coursework.)
